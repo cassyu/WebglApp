@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .container {
+            position: relative;
+        }
+
+        #overlay {
+            position: absolute;
+            /*相对左上角*/
+            left: 0px;
+            top: 0px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-family: monospace;
+            padding: 1em;
+        }
+
+        #canvas2d {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+    <title>WebGLApplication</title>
+</head>
+
+<body>
+    <select id='select'>
+    </select>
+    <div class="container">
+        <canvas id="webgl" width="800" height="600" style="background: lightgray;"> </canvas>
+        <div id="overlay">
+            <div>FPS: <span id="fps"></span></div>
+            <div>Tris: <span id="tris"></span></div>
+            <div>Verts: <span id="verts"></span></div>
+        </div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>

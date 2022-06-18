@@ -1,0 +1,26 @@
+{
+  "name": "webglapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node_modules/.bin/webpack-dev-server",
+    "build": "node_modules/.bin/webpack",
+    "watch": "node_modules/.bin/webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "recastjs": "^0.1.16",
+    "tga2png": "^0.1.3"
+  }
+}
